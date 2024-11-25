@@ -1,0 +1,24 @@
+<!--DEV
+@ @include('blocks/page-header/page-header.html')
+-->
+
+<header class="container  page-header  page-header--sticky">
+  <div class="page-header__inner">
+
+    <a href="index.html" class="logo" title="Офіс зеленого переходу">
+      <svg width="32" height="32" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#green-office-sm"></use></svg>
+    </a>
+
+    <div class="page-header__ctrls">
+      <div class="lang-switcher">
+        <a href="#" class="lang-switcher__link">Eng</a>
+      </div>
+
+      <button id="main-nav-toggler" class="burger" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-expanded="false" aria-controls="main-nav" aria-label="Menu Toggler">
+        <span></span>
+      </button>
+    </div>
+
+    @@include('../../blocks/main-nav/main-nav.html')
+  </div>
+</header>

@@ -1,0 +1,77 @@
+.research {
+  position: relative;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: $body-bg-2;
+
+  @media (min-width: $screen-xl) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &::after {
+
+    @media (min-width: $screen-md) {
+      display: block;
+      content: "";
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 285px;
+      background-position: top left;
+      background-size: 190px;
+      background-repeat: repeat;
+      background-image: svg-load('../blocks/sprite-svg/svg/pattern.svg', fill=$card-bg);
+    }
+  }
+
+  &__title,
+  &__slider,
+  &__footer {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__footer {
+    gap: 24px 0;
+    margin-top: 24px;
+  }
+
+  &__footer-nav-col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xl, 0);
+  }
+
+  &__footer-more-col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xl, 12, $grid-columns, 24px);
+
+    @media (min-width: $screen-md) {
+      text-align: right;
+    }
+
+    @media (min-width: $screen-xl) {
+      text-align: center;
+    }
+
+    .btn {
+
+      @media (max-width: $screen-md - 1) {
+        width: 100%;
+      }
+    }
+  }
+}

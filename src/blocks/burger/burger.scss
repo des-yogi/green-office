@@ -1,0 +1,86 @@
+.burger {
+  $transition-time: 0.2s;
+
+  $block-name:                &; // #{$block-name}__element
+
+  //position: relative;
+  //z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background: none;
+  border: none;
+  user-select: none;
+  cursor: pointer;
+
+  @media (min-width: $menu-desktop-width) {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+
+    & > span {
+      background: $main-light--hover;
+
+      &::before,
+      &::after {
+        background: $main-light--hover;
+      }
+    }
+  }
+
+  > span {
+    display: inline-flex;
+    width: 24px;
+    height: $toggler-part-height;
+    background: $toggler-part-bg-color;
+    position: relative;
+    transition: background $transition-time;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: $toggler-part-height;
+      background: $toggler-part-bg-color;
+      transform-origin: 50% 50%;
+      transition: top $transition-time, transform $transition-time, background $transition-time;
+    }
+
+    &::before {
+      top: -8px;
+    }
+
+    &::after {
+      top: 8px;
+    }
+  }
+
+  &--close {
+
+    > span {
+      transition: background $transition-time 0s;
+      background: transparent !important;
+
+      &::before,
+      &::after {
+        transition: top $transition-time, transform $transition-time $transition-time;
+        top: 0;
+      }
+
+      &::before {
+        transform: rotate3d(0, 0, 1, 45deg);
+      }
+
+      &::after {
+        transform: rotate3d(0, 0, 1, -45deg);
+      }
+    }
+  }
+}
