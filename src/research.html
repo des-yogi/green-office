@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home page</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас вимкнено JavaScript. Приносимо наші вибачення, але це ускладнює використання цього сайту. You have JavaScript disabled. We apologize, but this makes it difficult to use this site.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main">
+
+        @@include('blocks/hero-main/hero-main.html')
+
+        @@include('blocks/activity-areas/activity-areas.html')
+
+        <section class="container  news-block">
+          <h2 class="news-block__title">Новини та заяви</h2>
+
+          <div class="swiper  news-block__slider">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide  news-block__slide">
+                @@include('blocks/news-card/news-card.html', {
+                  "img": "placeholder-1",
+                  "title": "Керівник Офісу зеленого переходу, виступив на 4th International Sustainability Forum 2024 Association of Sustainable Development experts",
+                  "text": "Ця подія зібрала ключових учасників бізнесових та фінансових секторів України та ЄС для обговорення викликів і можливостей зеленого відновлення України",
+                  "tag": ""
+                })
+              </div>
+
+              <div class="swiper-slide  news-block__slide">
+                @@include('blocks/news-card/news-card.html', {
+                  "img": "placeholder-2",
+                  "title": "18 жовтня уряд ухвалив Стратегію запровадження звітності зі сталого розвитку для українських підприємств",
+                  "text": "Це значне рішення, яке сприяє інтеграції України в європейський економічний простір та покладає на бізнес відповідальність за прозоре управління",
+                  "tag": ""
+                })
+              </div>
+
+              <div class="swiper-slide  news-block__slide">
+                @@include('blocks/news-card/news-card.html', {
+                  "img": "placeholder-3",
+                  "title": "Андрій Кітура, директор з розвитку DiXi Group, керівник Офісу зеленого переходу виступив на конференції Green Deal Ukraїna",
+                  "text": "Під час свого виступу він детально розповів про важливість зелених фінансів для України та шляхи залучення інвестицій для розвитку сталих проєктів.",
+                  "tag": "З відео"
+                })
+              </div>
+
+            </div>
+          </div>
+
+          <div class="row  news-block__footer">
+
+            <div class="news-block__footer-nav-col">
+              <div class="swiper-nav">
+                <div class="swiper-button-prev swiper-button-prev--outline  news-block__prev">
+                  <svg width="65" height="12" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#arrow-left"></use></svg>
+                </div>
+                <div class="swiper-button-next swiper-button-next--outline  news-block__next">
+                  <svg width="65" height="12" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#arrow-right"></use></svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="news-block__footer-more-col">
+              <a href="#" class="btn">
+                <span>Читати всі новини</span>
+              </a>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="container  research">
+          <h2 class="research__title">Дослідження</h2>
+
+          <div class="swiper  research__slider">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide  research__slide">
+                @@include('blocks/research-card/research-card.html', {
+                  "img": "doc-placeholder",
+                  "title": "Коефіцієнт викидів парникових газів для виробництва та споживання електроенергії",
+                  "text": "Аналітичне дослідження та опис методологічного підходу до розрахунку",
+                })
+              </div>
+
+              <div class="swiper-slide  research__slide">
+                @@include('blocks/research-card/research-card.html', {
+                  "img": "doc-placeholder",
+                  "title": "Коефіцієнт викидів парникових газів для виробництва та споживання електроенергії",
+                  "text": "Аналітичне дослідження та опис методологічного підходу до розрахунку",
+                })
+              </div>
+
+              <div class="swiper-slide  research__slide">
+                @@include('blocks/research-card/research-card.html', {
+                  "img": "doc-placeholder",
+                  "title": "Коефіцієнт викидів парникових газів для виробництва та споживання електроенергії",
+                  "text": "Аналітичне дослідження та опис методологічного підходу до розрахунку",
+                })
+              </div>
+
+            </div>
+          </div>
+
+          <div class="row  research__footer">
+
+            <div class="research__footer-nav-col">
+              <div class="swiper-nav">
+                <div class="swiper-button-prev swiper-button-prev--outline  research__prev">
+                  <svg width="65" height="12" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#arrow-left"></use></svg>
+                </div>
+                <div class="swiper-button-next swiper-button-next--outline  research__next">
+                  <svg width="65" height="12" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#arrow-right"></use></svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="research__footer-more-col">
+              <a href="#" class="btn">
+                <span>Дивитися всі дослідження</span>
+              </a>
+            </div>
+          </div>
+
+        </section>
+
+        @@include('blocks/partners/partners.html')
+
+        @@include('blocks/contact-block/contact-block.html')
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>
