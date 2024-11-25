@@ -1,0 +1,104 @@
+.hero-main {
+  //min-height: 200px;
+  padding-top: 48px;
+  background-color: $main-color;
+  background-position: top right -98px;
+  background-size: 190px;
+  background-repeat: repeat-y;
+  background-image: svg-load('../blocks/sprite-svg/svg/pattern.svg', fill=$link-color--hover);
+
+  @media (min-width: $screen-md) {
+    background-position: top right -78px;
+  }
+
+  @media (min-width: $screen-xl) {
+    background-position: top right -48px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__slider {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    @media (min-width: $screen-md) {
+      position: relative;
+    }
+  }
+
+  &__slide {
+    color: $text-white;
+  }
+
+  &__col-img {
+    @include col(md, 6);
+    @include col(xl, 6, $grid-columns, 24px);
+
+    @media (max-width: $screen-md - 1) {
+      display: none;
+    }
+  }
+
+  &__col-text {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xl, 6, $grid-columns, 24px);
+
+    @media (min-width: $screen-xl) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__title {
+    color: inherit;
+
+    @media (min-width: $screen-xl) {
+      font-size: 56px;
+    }
+  }
+
+  &__ctrl-row {
+
+    @media (max-width: $screen-md - 1) {
+      margin-top: 24px;
+    }
+
+    @media (min-width: $screen-md) {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 24px;
+      z-index: 1;
+    }
+  }
+
+  &__ctrl-col {
+    @include col(xs, 12);
+    @include col-offset(md, 6);
+    @include col(md, 6);
+    @include col-offset(xl, 6);
+    @include col(xl, 6, $grid-columns, 24px);
+  }
+
+  &__ctrl {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+
+    @media (max-width: $screen-md - 1) {
+      justify-content: center;
+    }
+
+    @media (min-width: $screen-xl) {
+      gap: 24px;
+    }
+  }
+}

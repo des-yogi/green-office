@@ -1,0 +1,80 @@
+.activity-areas {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: $body-bg-2;
+
+  @media (min-width: $screen-md) {
+    background-size: 170px 246px;
+    background-repeat:
+      no-repeat,
+      no-repeat;
+    background-position:
+      left bottom,
+      right bottom;
+    background-image:
+      url(/img/windmill-l.png),
+      url(/img/windmill-r.png);
+  }
+
+  @media (min-width: $screen-xl) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background-size: 285px 409px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__header {
+    margin-bottom: 24px;
+    text-align: center;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__header-col {
+    @include col(xs, 12);
+    @include col-offset(md, 1);
+    @include col(md, 10);
+    @include col-offset(xl, 3);
+    @include col(xl, 6, $grid-columns, 24px);
+  }
+
+  &__intro {
+    hyphens: none;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 24px 16px;
+
+    @media (min-width: $screen-md) {
+      flex-direction: initial;
+      flex-wrap: wrap;
+      align-content: space-between;
+      justify-content: center;
+    }
+  }
+
+  &__card {
+    padding: 16px;
+    border: 3px solid;
+    //border-image: $border-gradient;
+    border-image: linear-gradient(rgba(198, 198, 198, 1), rgba(198, 198, 198, 0) 90%) 30;
+
+    @media (min-width: $screen-md) {
+      flex: 0 1;
+      flex-basis: calc(33.3333% - 10.6666px);
+    }
+
+    svg {
+      display: block;
+      width: 32px;
+      height: 32px;
+      margin-bottom: 24px;
+      fill: $main-color;
+    }
+  }
+}

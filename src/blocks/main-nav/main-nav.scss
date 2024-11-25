@@ -1,0 +1,74 @@
+.main-nav {
+  flex: 1 1 100%;
+  margin-left: -16px;
+  margin-right: -16px;
+
+  @media (min-width: $screen-md) {
+    margin-left: -32px;
+    margin-right: -32px;
+  }
+
+  // настольный вид списка
+  @media (min-width: $menu-desktop-width) {
+    flex: 1 1 auto;
+    display: flex !important;
+    justify-content: center;
+    margin: 0;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px 24px;
+    margin: 0;
+    padding: 16px;
+    list-style: none;
+    background-color: $main-color;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-direction: initial;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 8px 32px;
+    }
+
+    @media (min-width: $menu-desktop-width) {
+      padding: 0;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    &.active {
+
+      & > #{$block-name}__link {
+        color: $main-light--hover;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 6px 0;
+    font-size: inherit;
+    font-weight: 600;
+    text-decoration: none;
+    color: $text-white;
+    //background-color: #fff;
+
+    @media (min-width: $menu-desktop-width) {
+      padding: 4px 0;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $main-light--hover;
+      //background-color: aquamarine;
+    }
+  }
+}

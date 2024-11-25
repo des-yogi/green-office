@@ -1,0 +1,43 @@
+.copyrights {
+  display: flex;
+  flex-direction: column;
+  gap: 16px 24px;
+  padding-top: 16px;
+  margin-top: 32px;
+  font-size: $font-size-sm;
+  border-top: 1px solid $border-color;
+
+  @media (min-width: $screen-md) {
+    flex-direction: initial;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__owner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 0;
+    hyphens: none;
+    color: $text-white;
+
+    a {
+      //hyphens: none;
+      white-space: nowrap;
+      text-decoration: none;
+      color: inherit;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+        color: $main-light--hover;
+      }
+    }
+  }
+
+  &__dev {
+
+  }
+}

@@ -1,0 +1,24 @@
+.social-links {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 0 16px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: $text-white;
+
+    &:hover,
+    &:focus {
+      color: $main-light--hover;
+    }
+  }
+}

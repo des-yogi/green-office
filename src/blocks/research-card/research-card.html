@@ -1,0 +1,46 @@
+<!--DEV
+@ @include('blocks/research-card/research-card.html', {
+  "img": "doc-placeholder",
+  "title": "Коефіцієнт викидів парникових газів для виробництва та споживання електроенергії",
+  "text": "Аналітичне дослідження та опис методологічного підходу до розрахунку",
+})
+-->
+
+<article class="research-card">
+  <div class="embed-responsive embed-responsive--4-3  research-card__img">
+    <picture>
+      <source srcset="img/@@img.webp,
+                      img/@@img.webp 2x" media="(min-width: 1280px)" type="image/webp">
+      <source srcset="img/@@img.jpg,
+                      img/@@img.jpg 2x" media="(min-width: 1280px)">
+        <!-- 382x287, 573x431 2x -->
+      <source srcset="img/@@img.webp" media="(min-width: 1024px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 1024px)">
+        <!-- 893x670 -->
+      <source srcset="img/@@img.webp" media="(min-width: 768px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 768px)">
+        <!-- 705x529 -->
+      <source srcset="img/@@img.webp" media="(min-width: 480px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 480px)">
+        <!-- 848x636 -->
+      <source srcset="img/@@img.webp" media="(min-width: 320px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 320px)">
+        <!-- 585x439 -->
+      <img src="img/@@img.jpg" alt="Text" width="837" height="440" loading="lazy">
+    </picture>
+    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+  </div>
+
+  <div class="research-card__text-wrapper">
+    <div class="research-card__main">
+      <h3 class="card-title">@@title</h3>
+      <p class="research-card__intro">@@text</p>
+    </div>
+    <div class="research-card__footer">
+      <a href="#" class="research-card__more" download>
+        <span>Завантажити (pdf)</span>
+      </a>
+      <time class="publishedon" datetime="2024-10-15">15.10.24</time>
+    </div>
+  </div>
+</article>

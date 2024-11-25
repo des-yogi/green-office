@@ -1,0 +1,125 @@
+<!--DEV
+@ @include('blocks/hero-main/hero-main.html')
+-->
+
+<section class="container  hero-main">
+  <div class="swiper  hero-main__slider">
+
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide  hero-main__slide">
+        <div class="row  hero-main__slide-row">
+
+          <div class="hero-main__col-img">
+            <div class="embed-responsive embed-responsive--1-1  hero-main__img">
+              <picture>
+                <source srcset="img/hero-green.webp,
+                                img/hero-green.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                <source srcset="img/hero-green.jpg,
+                                img/hero-green.jpg 2x" media="(min-width: 1280px)">
+                  <!-- 588x588, 882x882 2x -->
+                <source srcset="img/hero-green.webp" media="(min-width: 1024px)" type="image/webp">
+                <source srcset="img/hero-green.jpg" media="(min-width: 1024px)">
+                  <!-- 840x840 -->
+                <source srcset="img/hero-green.webp" media="(min-width: 768px)" type="image/webp">
+                <source srcset="img/hero-green.jpg" media="(min-width: 768px)">
+                  <!-- 710x710 -->
+                <img src="img/hero-green.jpg" alt="Text" width="0" height="0">
+              </picture>
+              <!-- для первого эл. убрать loading="lazy" и див-лоадер -->
+            </div>
+          </div>
+
+          <div class="hero-main__col-text">
+            <div class="hero-main__text">
+              <h1 class="hero-main__title">Офіс зеленого переходу</h1>
+              <p class="hero-main__intro">Незалежний консультативно-дорадчий орган при Міністерстві економіки України, який допомагає впроваджувати реформи у сфері зеленого переходу, енергетичної та кліматичної політики України</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="swiper-slide  hero-main__slide">
+        <div class="row  hero-main__slide-row">
+
+          <div class="hero-main__col-img">
+            <div class="embed-responsive embed-responsive--1-1  hero-main__img">
+              <picture>
+                <source srcset="img/hero-green-2.webp,
+                                img/hero-green-2.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                <source srcset="img/hero-green-2.jpg,
+                                img/hero-green-2.jpg 2x" media="(min-width: 1280px)">
+                  <!-- 588x588, 882x882 2x -->
+                <source srcset="img/hero-green-2.webp" media="(min-width: 1024px)" type="image/webp">
+                <source srcset="img/hero-green-2.jpg" media="(min-width: 1024px)">
+                  <!-- 840x840 -->
+                <source srcset="img/hero-green-2.webp" media="(min-width: 768px)" type="image/webp">
+                <source srcset="img/hero-green-2.jpg" media="(min-width: 768px)">
+                  <!-- 710x710 -->
+                <img src="img/hero-green-2.jpg" alt="Text" width="0" height="0" loading="lazy">
+              </picture>
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+          </div>
+
+          <div class="hero-main__col-text">
+            <div class="hero-main__text">
+              <h1 class="hero-main__title">Офіс зеленого переходу 2</h1>
+              <p class="hero-main__intro">Незалежний консультативно-дорадчий орган при Міністерстві економіки України, який допомагає впроваджувати реформи у сфері зеленого переходу, енергетичної та кліматичної політики України</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="swiper-slide  hero-main__slide">
+        <div class="row  hero-main__slide-row">
+
+          <div class="hero-main__col-img">
+            <div class="embed-responsive embed-responsive--1-1  hero-main__img">
+              <picture>
+                <source srcset="img/hero-green-3.webp,
+                                img/hero-green-3.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                <source srcset="img/hero-green-3.jpg,
+                                img/hero-green-3.jpg 2x" media="(min-width: 1280px)">
+                  <!-- 588x588, 882x882 2x -->
+                <source srcset="img/hero-green-3.webp" media="(min-width: 1024px)" type="image/webp">
+                <source srcset="img/hero-green-3.jpg" media="(min-width: 1024px)">
+                  <!-- 840x840 -->
+                <source srcset="img/hero-green-3.webp" media="(min-width: 768px)" type="image/webp">
+                <source srcset="img/hero-green-3.jpg" media="(min-width: 768px)">
+                  <!-- 710x710 -->
+                <img src="img/hero-green-3.jpg" alt="Text" width="0" height="0" loading="lazy">
+              </picture>
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+          </div>
+
+          <div class="hero-main__col-text">
+            <div class="hero-main__text">
+              <h1 class="hero-main__title">Офіс зеленого переходу 3</h1>
+              <p class="hero-main__intro">Незалежний консультативно-дорадчий орган при Міністерстві економіки України, який допомагає впроваджувати реформи у сфері зеленого переходу, енергетичної та кліматичної політики України</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row  hero-main__ctrl-row">
+      <div class="hero-main__ctrl-col">
+        <div class="hero-main__ctrl">
+          <div class="swiper-button-prev  hero-main__prev">
+            <svg width="65" height="12" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#arrow-left"></use></svg>
+          </div>
+          <div class="swiper-button-next  hero-main__next">
+            <svg width="65" height="12" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#arrow-right"></use></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
