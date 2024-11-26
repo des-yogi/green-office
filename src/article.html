@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Стратегія запровадження звітності</title>
+  @@include('_include/page_head.html')
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+</head>
+
+<body>
+<noscript>У вас вимкнено JavaScript. Приносимо наші вибачення, але це ускладнює використання цього сайту. You have JavaScript disabled. We apologize, but this makes it difficult to use this site.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content  page__content--headerless">
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main  main--headerless">
+
+        <div class="container  article__wrapper">
+          <div class="row  article__row">
+
+            <div class="article__main-col">
+              <article class="article">
+
+                <div class="embed-responsive  embed-responsive--special  article__img">
+                  <picture>
+                    <source srcset="img/article-img.webp,
+                                    img/article-img.webp 2x" media="(min-width: 1280px)"
+                            type="image/webp">
+                    <source srcset="img/article-img.jpg,
+                                    img/article-img.jpg 2x" media="(min-width: 1280px)">
+                      <!-- 792x415, 1188x623 2x -->
+                    <source srcset="img/article-img.webp,
+                                    img/article-img.webp 2x" media="(min-width: 1024px)"
+                            type="image/webp">
+                    <source srcset="img/article-img.jpg,
+                                    img/article-img.jpg 2x" media="(min-width: 1024px)">
+                      <!-- 1136x596, 1704x894 2x -->
+                    <source srcset="img/article-img.webp" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="img/article-img.jpg" media="(min-width: 768px)">
+                      <!-- 1440x755 -->
+                    <source srcset="img/article-img.webp" media="(min-width: 480px)" type="image/webp">
+                    <source srcset="img/article-img.jpg" media="(min-width: 480px)">
+                      <!-- 825x432 -->
+                    <source srcset="img/article-img.webp" media="(min-width: 320px)" type="image/webp">
+                    <source srcset="img/article-img.jpg" media="(min-width: 320px)">
+                      <!-- 590x309 -->
+
+                    <img src="img/article-img.jpg" alt="Text" width="1704" haight="894">
+                  </picture>
+                </div>
+
+                <div>
+                  <h1 class="article__title">18 жовтня уряд ухвалив Стратегію запровадження звітності зі сталого розвитку для українських підприємств</h1>
+
+                  <p>🌍 Ukraine is taking important steps toward sustainable economic development. The Green Transition Office is yet another tool that will help achieve this goal.</p>
+                  <p>This was stated by Ukraine’s First Deputy Prime Minister and Minister of Economy, Yulia Svyrydenko, who emphasized the importance of the green transition as an integral part of the national recovery plan that will bring Ukraine closer to EU membership 🇺🇦💪.</p>
+                  <p>Yulia Svyrydenko noted that this initiative also opens new opportunities for cooperation with international partners, particularly the United Kingdom, and will help attract foreign investments to achieve ambitious climate goals 🌱🤝.</p>
+                  <p>💼 We extend our sincere gratitude to the <a href="#">Ministry of Economy of Ukraine</a> and Ms. Svyrydenko for their support of this project!</p>
+                  <p>The work of the Green Transition Office is a key step toward a sustainable future for Ukraine and the development of international partnerships in green transformation 🌿.</p>
+
+                  <p class="article__publishedon">
+                    Опубліковано <time datetime="2024-11-14">14.11.2024</time>
+                  </p>
+                </div>
+
+                @@include('blocks/gallery/gallery.html')
+
+              </article>
+            </div>
+
+            <div class="article__aside-col">
+              <aside class="article__aside">
+                <h2 class="article__aside-title">Інші новини</h2>
+
+                <div class="row  article__aside-inner">
+
+                  <div class="article__aside-inner-col">
+                    @@include('blocks/news-mini-card/news-mini-card.html', {
+                      "title": "Андрій Кітура, директор з розвитку DiXi Group, керівник Офісу зеленого переходу виступив на конференції Green Deal Ukraїna",
+                      "text": "Під час свого виступу він детально розповів про важливість зелених фінансів для України та шляхи залучення інвестицій для розвитку сталих проєктів."
+                    })
+                  </div>
+
+                  <div class="article__aside-inner-col">
+                    @@include('blocks/news-mini-card/news-mini-card.html', {
+                      "title": "Андрій Кітура, директор",
+                      "text": "Під час свого виступу він детально розповів про важливість зелених фінансів для України та шляхи залучення інвестицій для розвитку сталих проєктів."
+                    })
+                  </div>
+
+                  <div class="article__aside-inner-col">
+                    @@include('blocks/news-mini-card/news-mini-card.html', {
+                      "title": "Андрій Кітура, директор з розвитку DiXi Group, керівник Офісу зеленого переходу виступив на конференції Green Deal Ukraїna",
+                      "text": "Під час свого виступу він детально розповів про важливість зелених фінансів для України та шляхи залучення інвестицій для розвитку сталих проєктів."
+                    })
+                  </div>
+
+                </div>
+              </aside>
+            </div>
+
+          </div>
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+  <script>
+    (function () {
+      Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+      });
+    })()
+  </script>
+
+</body>
+</html>

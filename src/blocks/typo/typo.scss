@@ -74,6 +74,14 @@ h2 {
 }
 
 h2,
+.h2 {
+
+  &:not(:first-child) {
+    margin-top: 40px;
+  }
+}
+
+h2,
 h3,
 h4,
 .h2,
@@ -220,9 +228,51 @@ abbr[title] {
 }
 
 blockquote {
-  padding: 0;
+  padding: 24px;
   margin-left: 0;
   margin-right: 0;
+  color: $text-white;
+  background-color: $main-color;
+  border-radius: $border-radius;
+
+  p {
+
+    &:first-child {
+      position: relative;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      margin-bottom: 0;
+
+      &::before,
+      &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        background-size: 26px;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      &::before {
+        top: 0;
+        left: 0;
+        background-image: svg-load('../blocks/sprite-svg/svg/quote-left.svg', fill=$text-white);
+      }
+
+      &::after {
+        right: 0;
+        bottom: 0;
+        background-image: svg-load('../blocks/sprite-svg/svg/quote-right.svg', fill=$text-white);
+      }
+    }
+
+    &:last-child {
+      margin-top: 0.5em;
+      font-weight: 600;
+    }
+  }
 }
 
 dt {

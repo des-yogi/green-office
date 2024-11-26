@@ -1,0 +1,46 @@
+.header-decor {
+  padding-top: 48px;
+  color: $text-white;
+  background-color: $main-color;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+    padding: 64px 0;
+
+    @media (min-width: $screen-md) {
+      background-position: bottom 20px right;
+      background-repeat: no-repeat;
+      background-size: 550px;
+      background-image: svg-load('../blocks/header-decor/bg-img/city.svg', fill=rgba(220,220,220,0.4));
+    }
+
+    @media (min-width: $screen-lg) {
+      background-size: 650px;
+    }
+
+    @media (min-width: $screen-xl) {
+      background-position: bottom 5px right;
+      background-size: 795px;
+    }
+  }
+
+  &__col {
+    @include col(xs, 12);
+    @include col(md, 8);
+    @include col(lg, 7);
+    @include col(xl, 5, $grid-columns, 24px);
+  }
+
+  &__title {
+    color: inherit;
+
+    @media (min-width: $screen-xl) {
+      font-size: 56px;
+    }
+  }
+
+  &__intro {
+    hyphens: none;
+  }
+}

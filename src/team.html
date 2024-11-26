@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Команда</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас вимкнено JavaScript. Приносимо наші вибачення, але це ускладнює використання цього сайту. You have JavaScript disabled. We apologize, but this makes it difficult to use this site.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main">
+
+        @@include('blocks/header-decor/header-decor.html', {
+          "title": "Наша команда",
+          "intro": "Коефіцієнт викидів парникових газів для виробництва та споживання електроенергії"
+        })
+
+        <div class="container  news-card__page-wrapper">
+
+          <div class="row  teammate-card__wrapper">
+
+            <div class="teammate-card__col">
+              @@include('blocks/teammate-card/teammate-card.html', {
+                "photo": "teammate",
+                "name": "Андрій Кітюра",
+                "position": "Керівник офісу зеленого переходу",
+                "info": "Кандидат економічних наук, керівник Офісу зеленого переходу Міністерства економіки України. Понад 15 років досвіду в сферу зміни клімату, сталого розвитку, ESG.",
+              })
+            </div>
+
+            <div class="teammate-card__col">
+              @@include('blocks/teammate-card/teammate-card.html', {
+                "photo": "teammate",
+                "name": "Андрій Кітюра 2",
+                "position": "Керівник зеленого переходу",
+                "info": "Кандидат економічних наук",
+              })
+            </div>
+
+            <div class="teammate-card__col">
+              @@include('blocks/teammate-card/teammate-card.html', {
+                "photo": "teammate",
+                "name": "Андрій Кітюра",
+                "position": "Керівник офісу зеленого переходу",
+                "info": "Кандидат економічних наук, керівник Офісу зеленого переходу Міністерства економіки України. Понад 15 років досвіду в сферу зміни клімату, сталого розвитку, ESG.",
+              })
+            </div>
+
+            <div class="teammate-card__col">
+              @@include('blocks/teammate-card/teammate-card.html', {
+                "photo": "teammate",
+                "name": "Андрій Кітюра",
+                "position": "Керівник офісу зеленого переходу",
+                "info": "Кандидат економічних наук, керівник Офісу зеленого переходу Міністерства економіки України. Понад 15 років досвіду в сферу зміни клімату, сталого розвитку, ESG.",
+              })
+            </div>
+
+            <div class="teammate-card__col">
+              @@include('blocks/teammate-card/teammate-card.html', {
+                "photo": "teammate",
+                "name": "Андрій Кітюра",
+                "position": "Керівник офісу зеленого переходу",
+                "info": "Кандидат економічних наук, керівник Офісу зеленого переходу Міністерства економіки України. Понад 15 років досвіду в сферу зміни клімату, сталого розвитку, ESG.",
+              })
+            </div>
+
+          </div>
+
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

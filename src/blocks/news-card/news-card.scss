@@ -75,4 +75,28 @@
       display: none;
     }
   }
+
+  &__page-wrapper {
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    @media (min-width: $screen-xl) {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+
+    & > .row {
+      gap: 16px 0;
+
+      @media (min-width: $screen-xl) {
+        gap: 24px 0;
+      }
+    }
+  }
+
+  &__page-col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xl, 4, $grid-columns, 24px);
+  }
 }

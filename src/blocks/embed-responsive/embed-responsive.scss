@@ -59,4 +59,11 @@
       padding-top: percentage(172 / 328);
     }
   }
+
+  &--portret {
+
+    &::before {
+      padding-top: percentage(4 / 3);
+    }
+  }
 }
