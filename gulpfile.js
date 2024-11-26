@@ -488,6 +488,7 @@ gulp.task('serve', gulp.series('build', function() {
 
   browserSync.init({
     server: dirs.buildPath,
+    https: true,
     port: 3000,
     startPath: 'index.html',
     open: true,

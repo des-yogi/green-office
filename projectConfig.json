@@ -25,7 +25,14 @@
     "news-card": [],
     "research-card": [],
     "copyrights": [],
-    "social-links": []
+    "social-links": [],
+    "header-decor": [],
+    "article": [],
+    "gallery": [],
+    "news-mini-card": [],
+    "teammate-card": [],
+    "error-404": [],
+    "text-doc": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

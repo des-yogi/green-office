@@ -66,6 +66,21 @@
     }
   }
 
+  &--secondary {
+    color: $link-color;
+    background-color: $text-white;
+    border-color: $text-white;
+
+    &--disabled,
+    &:disabled {
+      cursor: not-allowed;
+      color: $text-muted;
+      background-color: $disabled-bg;
+      border-color: $disabled-bg;
+      pointer-events: none;
+    }
+  }
+
   &--sm {
     height: 32px;
   }

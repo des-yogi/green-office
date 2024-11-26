@@ -1,0 +1,79 @@
+.article {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__wrapper {
+    padding-top: 16px;
+    padding-bottom: 48px;
+
+    @media (min-width: $screen-xl) {
+      padding-top: 24px;
+      padding-bottom: 64px;
+    }
+  }
+
+  &__row {
+    gap: 48px 0;
+  }
+
+  &__main-col {
+    @include col(xs, 12);
+    @include col(xl, 8, $grid-columns, 24px);
+  }
+
+  &__aside-col {
+    @include col(xs, 12);
+    @include col(xl, 4, $grid-columns, 24px);
+  }
+
+  &__img {
+    margin-bottom: 16px;
+    background: $card-bg;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 24px;
+    }
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__title {
+
+    @media (max-width: $screen-xl - 1) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__publishedon {
+    margin: 32px 0 0;
+
+    @media (min-width: $screen-xl) {
+      margin: 48px 0 0;
+    }
+  }
+
+  &__aside {
+
+  }
+
+  &__aside-title {}
+
+  &__aside-inner {
+    gap: 16px 0;
+
+    @media (min-width: $screen-xl) {
+      gap: 24px 0;
+    }
+  }
+
+  &__aside-inner-col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xl, 12, $grid-columns, 24px);
+  }
+}
